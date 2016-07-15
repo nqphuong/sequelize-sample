@@ -1,0 +1,32 @@
+{
+  "name": "sequelize-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=app npm run start:app || npm run start:user",
+    "start:app": "babel-node ./app.js",
+    "start:user": "babel-node ./user.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.11.1",
+    "sequelize": "^3.23.4",
+    "babel-core": "*",
+    "babel-polyfill": "*",
+    "babel-preset-node5": "*",
+    "babel-preset-es2015": "*",
+    "babel-register": "*",
+    "bluebird": "*",
+    "express": "*",
+    "express-graphql": "*",
+    "graphql": "*",
+    "bcryptjs": "*",
+    "if-env": "*"
+    },
+  "devDependencies": {
+    "babel-cli": "*"
+  }
+}
