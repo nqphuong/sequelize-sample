@@ -58,15 +58,6 @@ const Article = Connection.define('article', {
     }
 });
 
-/*Connection.sync().then(() => {
-    Article.create({
-        title: 'title',
-        body: 'content',
-    }).then(()=>{
-
-    });
-});*/
-
 Connection.sync({
     force: true, // Delete existing table and create new table
     logging: console.log
